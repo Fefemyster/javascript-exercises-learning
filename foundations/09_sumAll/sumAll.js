@@ -11,7 +11,9 @@ const sumAll = function (num1, num2) {
     arr.push(generatedNumbers);
   }
   //4. Sum all the numbers inside the array
-  let result = arr.reduce((sum, current) => sum + current);
+  let result = arr.reduce((sum, current) => {
+    sum + current;
+  }, 0);
 
   return result;
 };
