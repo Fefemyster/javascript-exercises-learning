@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const convertToCelsius = function (temp) {
+        tempCelsius = (temp - 32) / 1.8;
+        return tempCelsius.toFixed(2) + "°C";
+      };
+
+      const convertToFahrenheit = function (temp) {
+        tempFahrenheit = temp * 1.8 + 32;
+        return tempFahrenheit.toFixed(2) + "°F";
+      };
+
+      console.log(convertToCelsius(32)); // fahrenheit to celsius, should return 0
+
+      console.log(convertToFahrenheit(0)); // celsius to fahrenheit, should return 32
+    </script>
+  </body>
+</html>
