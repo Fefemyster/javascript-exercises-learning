@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Determine leap years divisible by 4 and 400
+      // Years divisible by 100 are not leap
+      /*
+      const leapYears = function (year) {
+        if (year % 4 === 0 && year % 400 === 0) {
+          console.log(`Year ${year} is leap`);
+        } else if (year % 100 === 0) {
+          console.log(`Year ${year} is not leap`);
+        } else {
+          console.log(`Year ${year} is not leap`);
+        }
+      };
+
+      console.log(leapYears(1985));
+      */
+
+      const leapYears = function (year) {
+        if (year % 4 === 0 && year % 400 === 0) {
+          console.log(`Year ${year} is leap`);
+          return true;
+        } else if (year % 100 === 0) {
+          console.log(`Year ${year} is not leap`);
+          return false;
+        } else {
+          console.log(`Year ${year} is not leap`);
+          return false;
+        }
+      };
+
+      console.log(leapYears(2010));
+    </script>
+  </body>
+</html>
