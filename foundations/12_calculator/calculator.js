@@ -6,16 +6,13 @@ const subtract = function (num1, num2) {
   return num2 - num1;
 };
 
+//Using implicit return
 const sum = function (arr) {
-  return arr.reduce((total, arr) => {
-    total + arr;
-  }, 0);
+  return arr.reduce((total, arr) => total + arr, 0);
 };
 
 const multiply = function (arr) {
-  return arr.reduce((total, arr) => {
-    total * arr;
-  });
+  return arr.reduce((total, arr) => total * arr);
 };
 
 const power = function (base, exponent) {
